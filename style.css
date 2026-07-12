@@ -277,7 +277,6 @@ button:hover{
     }
     .hamburger{
     display:block;
-    align-items:flex-end;
 }
 
 .nav-links{
