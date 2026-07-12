@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="logo.jfif" alt="Logo">
+                <h1>David Essense</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+     <div class="hamburger">
+        ☰
+    </div>
+        </nav>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="perfume4.jfif" alt="About Image">
+            </div>
+        <div class="about-us">
+            <h1>About David Essense</h1>
+            <p>Welcome to David Essense, where luxury meets fragrance.<br> Our journey began with a passion for creating exceptional perfumes that captivate and inspire.</p>
+        </div>
+        </section>
+        <div class="hero">
+            <p>Discover Your Signature Scent Luxury perfumes <br>for every occasion.</p>
+            <button class="homebuton" onclick="window.location.href='product.html'">Shop Now</button>
+        </div>
+        <div class="featured">
+            <h2>Featured Products</h2>
+            <img src="perfume.jfif" alt="featured product">
+            <img src="perfume2.jfif" alt="featured product">
+            <img src="perfume3.jfif" alt="featured product">
+        </div>
+        <div class="choose">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li>✓ High-quality ingredients for long-lasting fragrances.</li>
+                <li>✓ Expertly crafted scents for every occasion.</li>
+                <li>✓ Exceptional customer service and satisfaction guaranteed.</li>
+            </ul>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <p>⭐⭐⭐⭐⭐"These perfumes are absolutely divine! I get compliments every time I wear them."</p>
+            <p>⭐⭐⭐⭐⭐"The quality is unmatched. These are the best perfumes I've ever used."</p>
+            </div>  
+      <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <p>
+        📧
+        <a href="mailto:info@davidessence.com">
+            info@davidessence.com
+        </a>
+    </p>
+
+    <p>
+        📞
+        <a href="tel:+2348012345678">
+            +234 801 234 5678
+        </a>
+    </p>
+</section>
+        <div class="footer">
+            <p>&copy; 2024 David Essense. All rights reserved.</p>
+        </div>
+        <script>
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle("active");
+});
+
+// Close menu when clicking anywhere outside
+document.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+});
+
+// Prevent clicks inside the menu from closing it
+navLinks.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+</script>
+    </body>
+</html>
